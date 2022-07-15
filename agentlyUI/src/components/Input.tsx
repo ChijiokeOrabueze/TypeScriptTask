@@ -22,7 +22,7 @@ interface InputProps {
     type: string;
     value: string;
     placeholder?: string;
-    handleChange: () => void;
+    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     max?: number;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screens } from '../../pages/Home/Home';
+import { navigation, Screens } from '../../pages/Home/Home';
 import { Container, FilterBtn, Navlinks, RoundBtn } from './style';
 
 
@@ -11,7 +11,6 @@ interface NavbarProps {
 
 
 const Navbar = ({curScreen, setCurScreen}:NavbarProps) => {
-  const navigation = ["House", "Office Space", "Flats and Apartments", "Lands", "Semi Detached Bungalow", "Semi Detached Duplex", "Warehouse", "Mini Flat", "Shop In a Mall"]
   return (
     <Container>
       <Navlinks>

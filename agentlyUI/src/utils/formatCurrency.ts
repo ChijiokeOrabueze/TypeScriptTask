@@ -1,6 +1,7 @@
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
-    currency: "USD",
-    style: "currency"
+    currency: "NGN",
+    style: "currency",
+    currencyDisplay: "symbol"
 })
 
 

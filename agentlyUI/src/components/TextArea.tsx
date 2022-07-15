@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -24,7 +25,7 @@ interface TextAreaProps {
     name: string;
     value: string;
     placeholder?: string;
-    handleChange: () => void;
+    handleChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
     cols?: number;
     rows?: number;
 }

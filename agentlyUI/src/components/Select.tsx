@@ -21,7 +21,7 @@ interface SelectProps {
     name: string;
     value: string;
     placeholder?: string;
-    handleChange: () => void;
+    handleChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     options: string[];
 
 }
