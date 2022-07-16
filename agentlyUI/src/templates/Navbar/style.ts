@@ -48,10 +48,9 @@ export const FilterBtn = styled.div`
     align-items: center;
     padding: 16px;
     gap: 8px;
-
+    cursor: pointer;
     width: 90px;
     height: 48px;
-
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     border-radius: 8px;

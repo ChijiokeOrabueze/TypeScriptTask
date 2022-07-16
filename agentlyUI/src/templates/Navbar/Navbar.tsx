@@ -7,10 +7,11 @@ import { Container, FilterBtn, Navlinks, RoundBtn } from './style';
 interface NavbarProps {
   curScreen: Screens | null;
   setCurScreen: React.Dispatch<React.SetStateAction<Screens>>;
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 
-const Navbar = ({curScreen, setCurScreen}:NavbarProps) => {
+const Navbar = ({curScreen, setCurScreen, setShowModal}:NavbarProps) => {
   return (
     <Container>
       <Navlinks>
@@ -29,7 +30,7 @@ const Navbar = ({curScreen, setCurScreen}:NavbarProps) => {
       <RoundBtn>
         <span>{">"}</span>
       </RoundBtn>
-      <FilterBtn>
+      <FilterBtn onClick = {() => setShowModal(true)}>
         <img src="/assets/icons/funnel.svg" alt="funnel"  />
         <p>Filter</p>
       </FilterBtn>

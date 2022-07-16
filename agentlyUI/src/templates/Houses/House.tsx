@@ -1,9 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { formatCurrency } from '../../utils/formatCurrency';
 import { HouseDescription, HouseImage, ImgContainer, PropertyInfo, PropertyLocation, PropertyP } from './Houses.style';
 
 
-interface HouseProps {
+export interface HouseProps {
     data: {
         id: number;
         images : string[];
@@ -12,6 +13,7 @@ interface HouseProps {
             state: string;
             country: string;
         },
+        owner: string;
         bedroom: number;
         sittingRoom: number;
         bathroom: number;
@@ -25,9 +27,10 @@ interface HouseProps {
 }
 
 const House = ({data}: HouseProps) => {
+    const navigate = useNavigate();
   return (
     <div className='house-group'>
-        <ImgContainer>
+        <ImgContainer onClick = {() => navigate(`/property/${data.id}`,{state:{data}})}>
             <HouseImage src= {data.images[0]} alt = {`property-${data.id}`}/>
             <img src="/assets/icons/logo-light.svg" alt="" className='logo-light'/>
         </ImgContainer>

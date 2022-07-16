@@ -9,7 +9,8 @@
             "state": "Lagos",
             "country": "NG"
         },
-        "bedroom": 3,
+        "owner":"IJT Realtor",
+        "bedroom":6,
         "sittingRoom": 3,
         "bathroom": 2,
         "toilet": 2,
@@ -29,7 +30,8 @@
             "state": "Lagos",
             "country": "NG"
         },
-        "bedroom": 3,
+        "owner":"BNW Realtor",
+        "bedroom": 4,
         "sittingRoom": 3,
         "bathroom": 2,
         "toilet": 2,
@@ -49,6 +51,7 @@
             "state": "Lagos",
             "country": "NG"
         },
+        "owner":"BNW Realtor",
         "bedroom": 3,
         "sittingRoom": 3,
         "bathroom": 2,
@@ -69,6 +72,7 @@
             "state": "Lagos",
             "country": "NG"
         },
+        "owner":"IJT Realtor",
         "bedroom": 3,
         "sittingRoom": 3,
         "bathroom": 2,
@@ -89,7 +93,8 @@
             "state": "Lagos",
             "country": "NG"
         },
-        "bedroom": 3,
+        "owner":"BNW Realtor",
+        "bedroom": 1,
         "sittingRoom": 3,
         "bathroom": 2,
         "toilet": 2,
@@ -109,6 +114,7 @@
             "state": "Lagos",
             "country": "NG"
         },
+        "owner":"IJT Realtor",
         "bedroom": 3,
         "sittingRoom": 3,
         "bathroom": 2,
@@ -129,7 +135,8 @@
             "state": "Lagos",
             "country": "NG"
         },
-        "bedroom": 3,
+        "owner":"IJT Realtor",
+        "bedroom": 4,
         "sittingRoom": 3,
         "bathroom": 2,
         "toilet": 2,
@@ -149,6 +156,7 @@
             "state": "Lagos",
             "country": "NG"
         },
+        "owner": "IJT Realtor",
         "bedroom": 3,
         "sittingRoom": 3,
         "bathroom": 2,

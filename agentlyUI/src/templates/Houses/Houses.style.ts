@@ -24,6 +24,7 @@ export const ImgContainer = styled.div`
     height: 230px;
     width: 220px;
     border-radius: 8px;
+    cursor: pointer;
     // overflow: hidden;
 
     .logo-light{
@@ -39,6 +40,7 @@ export const HouseImage = styled.img`
     width: 220px;
     object-fit: cover;
     border-radius: 8px;
+    // cursor: pointer;
 
 `
 
