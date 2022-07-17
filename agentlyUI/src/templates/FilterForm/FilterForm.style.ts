@@ -37,7 +37,7 @@ export const Header = styled.div`
     justify-content: space-between;
     width: 50%;
     align-self: start;
-    height: 45px;
+    height: 50px;
     padding-left: 20px;
     // border: 1px solid red;
 
@@ -62,6 +62,20 @@ export const Form = styled.form`
     flex-direction: column;
     gap: 14px;
 
+
+    .rooms-container{
+        .rooms{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding 20px 0;
+            border-bottom:1px solid #E5E5E5;
+            .form-group{
+                width: 257px;
+            }
+        }
+    }
+
 `
 
 export const Heading = styled.h1`
@@ -79,19 +93,6 @@ export const PriceContainer = styled.div`
     padding: 20px 0;
     border-bottom:1px solid #E5E5E5;
     gap: 16px;
-
-`
-
-export const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding 20px 0;
-    border-bottom:1px solid #E5E5E5;
-    .form-group{
-        width: 257px;
-    }
-
 
 `
 

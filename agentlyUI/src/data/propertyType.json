@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 0,
+        "name": "House",
+        "image": "house"
+    },
+    {
+        "id" : 1,
+        "name": "Apartment",
+        "image": "apartment"
+    },
+    {
+        "id" : 2,
+        "name": "Land",
+        "image": "land"
+    },
+    {
+        "id" : 3,
+        "name": "Warehouse",
+        "image": "warehouse"
+    },
+    {
+        "id" : 4,
+        "name": "Mini flat",
+        "image": "mini-flat"
+    },
+    {
+        "id" : 5,
+        "name": "Office space",
+        "image": "office-space"
+    }
+]

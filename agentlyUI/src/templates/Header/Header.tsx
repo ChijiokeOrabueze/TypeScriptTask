@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { Container, Logo, RightBox } from './style';
-// import Logo from '/../assets/icon/logo.svg';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ const Header = () => {
         <SearchBar />
 
         <RightBox>
-            <span>
+            <span style={{cursor: "pointer"}} onClick = {() => navigate("/add-property")}>
                 Own a property? 
             </span>
             <div>

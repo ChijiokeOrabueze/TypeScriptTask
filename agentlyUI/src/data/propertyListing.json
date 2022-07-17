@@ -1,0 +1,17 @@
+[
+    {
+        "id": 0,
+        "title": "Rental",
+        "content": "A rented place within a multi-unit residential building or complex."
+    },
+    {
+        "id": 1,
+        "title": "Purchase",
+        "content": "A rented place within a multi-unit residential building or complex."
+    },
+    {
+        "id": 2,
+        "title": "Lease",
+        "content": "A rented place within a multi-unit residential building or complex."
+    }
+]
