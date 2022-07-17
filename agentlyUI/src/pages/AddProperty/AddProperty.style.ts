@@ -36,7 +36,7 @@ export const RightContainer = styled.div`
 `
 
 export const Box = styled.div`
-    padding: 40px 55px 0 55px;
+    padding: 35px 55px 0 55px;
     width: 100%;
     flex: 6;
 
@@ -90,4 +90,34 @@ export const Btn = styled(SubmitBtn)`
 
 export const InnerBox = styled.div`
     width: 100%;
+`
+
+export const UploadContainer = styled.div`
+    width: 444px;
+    height: 440px;
+    background: #FFFFFF;
+    border: 1px dashed #B0B0B0;
+    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #222222;
+        position: absolute;
+        bottom: 20px;
+    }
+
+
 `

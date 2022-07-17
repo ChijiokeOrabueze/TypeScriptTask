@@ -6,7 +6,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    height: 150px;
 
     textarea{
         height: 150px;

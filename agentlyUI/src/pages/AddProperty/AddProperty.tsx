@@ -1,9 +1,12 @@
 import { type } from 'os';
 import React, { useLayoutEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Heading } from '../../templates/FilterForm/FilterForm.style';
 import PropertyDetails from '../../templates/PropertyDetails';
+import PropertyImage from '../../templates/PropertyImage';
+import PropertyOwner from '../../templates/PropertyOwner';
 import PropertyType from '../../templates/PropertyType';
-import { Box, Btn, Container, Foot, FootDiv, ImageContainer, InnerBox, RightContainer } from './AddProperty.style';
+import { Box, Btn, Container, Foot, FootDiv, ImageContainer, InnerBox, RightContainer, UploadContainer } from './AddProperty.style';
 
 interface FindPropertyProps {
     setShowHeaderAndFooter: React.Dispatch<React.SetStateAction<boolean>>;
@@ -53,8 +56,16 @@ const AddProperty = ({setShowHeaderAndFooter}: FindPropertyProps) => {
                         subPage === 0 ?
                         <PropertyType />:
                         subPage === 1 ?
-                        <PropertyDetails />
-                        :""
+                        <PropertyDetails />:
+                        subPage === 2 ? 
+                        <PropertyOwner />:
+                        subPage === 3 ?
+                        <UploadContainer onClick = {() => setSubPage(4)}>
+                            <img src="/assets/icons/image.svg" alt=""/>
+                            <Heading>Add at least 5 photos</Heading>
+                            <span>Upload from your device</span>
+                        </UploadContainer>:
+                        <PropertyImage />
 
                     }
                 </InnerBox>
