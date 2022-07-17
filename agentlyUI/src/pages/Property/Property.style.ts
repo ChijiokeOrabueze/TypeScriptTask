@@ -65,6 +65,42 @@ export const ImageContainer = styled.div`
 
 `
 
+export const Arrow = styled.div`
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 10px;
+        width: 10px;
+    }
+`
+
+export const Radios = styled.div`
+    
+    position: absolute;
+    bottom: 24px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    span {
+        background-color: white;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+    }
+`
+
 export const PrropertyNav = styled.div `
     width: 100%;
     display: flex;

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { HouseProps } from '../../templates/Houses/House';
 import { formatCurrency } from '../../utils/formatCurrency';
-import { Btn, Container, CtaBox, DescContainer, Header, HeaderP, Heading, ImageContainer, InfoContainer, LeftContainer, PriceBtn, PrropertyNav, RightContainer, RightHeader, ShowMore } from './Property.style'
+import { Arrow, Btn, Container, CtaBox, DescContainer, Header, HeaderP, Heading, ImageContainer, InfoContainer, LeftContainer, PriceBtn, PrropertyNav, Radios, RightContainer, RightHeader, ShowMore } from './Property.style'
 
 
 
@@ -22,6 +22,20 @@ const Property = () => {
             </Heading>
             <ImageContainer>
                 <img src= {data.images[0]} alt="" />
+                <Arrow>
+                    <img src="/assets/icons/caret-right.svg" alt="caret-right"/>
+                </Arrow>
+                <Radios>
+                    {
+                        [1,2,3,4,5].map((num, i) => (
+                            <span key = {i}
+                                style = {{
+                                    opacity: num === 1 ? 1 : 0.7
+                                }}>
+                            </span>
+                        ))
+                    }
+                </Radios>
             </ImageContainer>
         </LeftContainer>
         <RightContainer>
@@ -74,7 +88,7 @@ const Property = () => {
                             </div>
                         </ShowMore>
                         <CtaBox>
-                            <PriceBtn>{`Buy now: ${formatCurrency(data.price)}`}</PriceBtn>
+                            <PriceBtn>Buy now: &#8358;{`${formatCurrency(data.price)}`}</PriceBtn>
                             <Btn>
                                 <img src= {`/assets/icons/logo-icon.svg`} alt="" />
                             </Btn>

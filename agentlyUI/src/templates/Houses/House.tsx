@@ -60,7 +60,7 @@ const House = ({data}: HouseProps) => {
                 </PropertyInfo>
             </div>
             <PropertyP className="PropertyPrice">
-                {formatCurrency(data.price)}
+                &#8358;{formatCurrency(data.price)}
             </PropertyP>
         </HouseDescription>
 

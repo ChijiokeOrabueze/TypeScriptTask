@@ -1,4 +1,3 @@
-import { type } from 'os';
 import React, { useLayoutEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Heading } from '../../templates/FilterForm/FilterForm.style';
@@ -78,7 +77,7 @@ const AddProperty = ({setShowHeaderAndFooter}: FindPropertyProps) => {
                     border: "1px solid black"
                 }}></span><span style={{
                     flex: subPageRatios[subPage][1],
-                    border: "1px solid gray"
+                    border: "1px solid #E5E5E5"
                 }}></span></p>
                 <FootDiv>
                     <span style={{
