@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Input from '../../components/Input'
 import Rooms from '../../components/Rooms';
-import { Container, Footer, Form, Header, Heading, PriceContainer, SubmitBtn} from './FilterForm.style';
+import { Container, Footer, Form, Header, Heading, InputWrapper, PriceContainer, SubmitBtn} from './FilterForm.style';
 
 
 
@@ -40,21 +40,26 @@ const FilterForm = ({setShowModal}:FilterFormProps) => {
             <div>
                 <Heading>Price range</Heading>
                 <PriceContainer>
-                    <Input 
-                        title='min price'
-                        name='minPrice'
-                        value={`${filterData.minPrice}`}
-                        type='text'
-                        handleChange={(e) => handleChange(e,"minPrice")}
-                        inner = {true}/>
-
-                    <Input 
-                        title='max price'
-                        name='maxPrice'
-                        value={`${filterData.maxPrice}`}
-                        type='text'
-                        handleChange={(e) => handleChange(e,"maxPrice")}
-                        inner = {true}/>
+                    <InputWrapper>
+                        <Input 
+                            title='min price'
+                            name='minPrice'
+                            value={`${filterData.minPrice}`}
+                            type='text'
+                            handleChange={(e) => handleChange(e,"minPrice")}
+                            inner = {true}/>
+                        <span>&#8358;</span>
+                    </InputWrapper>
+                    <InputWrapper>
+                        <Input 
+                            title='max price'
+                            name='maxPrice'
+                            value={`${filterData.maxPrice}`}
+                            type='text'
+                            handleChange={(e) => handleChange(e,"maxPrice")}
+                            inner = {true}/>
+                        <span>&#8358;</span>
+                    </InputWrapper>
                 </PriceContainer>
             </div>
             <div className='rooms-container'>

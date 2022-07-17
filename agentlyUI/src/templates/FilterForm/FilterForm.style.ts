@@ -31,6 +31,22 @@ export const Container = styled.div`
 
 `
 
+export const InputWrapper = styled.div`
+    width: 100%;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 23px;
+        left: 9px;
+    }
+
+    .form-input {
+        padding-left: 20px;
+    }
+
+`
+
 export const Header = styled.div`
     display: flex;
     align-items: center;

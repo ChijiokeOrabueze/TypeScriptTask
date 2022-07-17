@@ -15,9 +15,10 @@ const subPageRatios = [[1,5],[1,2],[2,1],[4,1],[1,0]];
 
 const AddProperty = ({setShowHeaderAndFooter}: FindPropertyProps) => {
     const [subPage, setSubPage] = useState<subPageType>(0);
-    
     const navigate = useNavigate();
 
+
+    // Utils
     const goBackSubPage = () => {
         subPage > 0 && setSubPage(subPage - 1 as subPageType);
     }
@@ -25,6 +26,8 @@ const AddProperty = ({setShowHeaderAndFooter}: FindPropertyProps) => {
     const goNextSubPage = () => {
         subPage <= 2 && setSubPage(subPage + 1 as subPageType);
     }
+
+    // End Utils
 
 
 

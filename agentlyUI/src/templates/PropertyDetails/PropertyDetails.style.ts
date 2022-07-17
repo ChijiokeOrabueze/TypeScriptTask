@@ -3,6 +3,12 @@ import { PropertyTypeDiv } from "../PropertyType/PropertyType.stlye";
 
 
 export const Container = styled.div`
+    img.location {
+        position: absolute;
+        right: 10px;
+        top: 32%;
+    }
+
 `
 
 export const PropertyDetailDiv = styled(PropertyTypeDiv)`

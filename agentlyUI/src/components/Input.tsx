@@ -16,16 +16,13 @@ const Container = styled.div`
         
     }
 
-    .test{
+    .star{
         position: absolute;
         bottom: 16px;
         left: 10px;
         pointer-events: none;
         color: grey;
         transition: .5s;
-    }
-
-    .star{
         transform: translateY(-20px);
         font-size: 12px;
     }
@@ -61,7 +58,7 @@ const Input = (props: InputProps) =>{
                      />
             {
                 inner &&
-                <p className={value !== "" ? 'star test': 'test'}>{title}</p>
+                <p className='star'>{title}</p>
             }   
         </Container>
     )
