@@ -1,12 +1,12 @@
 import React from 'react';
-import { navigation, Screens } from '../../pages/Home/Home';
+import { navigation } from '../../pages/Home/Home';
 import { Container, FilterBtn, Navlinks, RoundBtn } from './style';
 
 
 
 interface NavbarProps {
-  curScreen: Screens | null;
-  setCurScreen: React.Dispatch<React.SetStateAction<Screens>>;
+  curScreen: number;
+  setCurScreen: React.Dispatch<React.SetStateAction<number>>;
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 

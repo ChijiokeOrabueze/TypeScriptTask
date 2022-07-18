@@ -8,16 +8,13 @@ import { pagination } from '../../utils/pagination';
 import { Container, NavigationBtn, NavigationOptions, NavigationP, TabBox } from './Home.style';
 import UnderConstruction from './UnderConstruction';
 
-export enum Screens {
-    Home
 
-}
 
 export const navigation = ["House", "Office Space", "Flats and Apartments", "Lands", "Semi Detached Bungalow", "Semi Detached Duplex", "Warehouse", "Mini Flat", "Shop In a Mall"]
 
 
 const Home = () => {
-    const [curScreen, setCurScreen] = useState<Screens>(0);
+    const [curScreen, setCurScreen] = useState<number>(0);
     const [showModal, setShowModal] = useModal();
     const paginatedPages = pagination(curScreen).map((s,i) => {
       if(typeof s === "string"){
